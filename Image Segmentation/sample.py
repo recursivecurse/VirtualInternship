@@ -3,7 +3,10 @@ from matplotlib import pyplot as plt
 import numpy as np
 import cv2
 
-img = cv2.imread("clahe_mine2.png")
+img = cv2.imread("d1.jpeg")
+
+plt.hist(img.ravel(),256,[0,256])
+plt.show()
 
 img2 = img.reshape((-1,3))
 
